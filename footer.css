@@ -1,0 +1,97 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 35px 70px 15px;
+    max-width: 1460px;
+    max-height: 1460px;
+    margin: 10px auto 0;
+    
+}
+
+
+.footer-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-esquerda {
+    width: 300px;
+}
+
+.newsletter p,
+.redes-sociais p {
+    margin-bottom: 8px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.redes-sociais {
+    margin-top: 40px;
+}
+
+.icones-redes {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 55px;
+}
+
+.footer-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-coluna h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-coluna a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+ .footer-menu {
+    display: flex;
+}
+
+.footer-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-copyright {
+    border-top: 1px solid #aaa;
+    margin-top: 35px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.newsletter:hover,
+.redes-sociais:hover,
+.footer-menu:hover{
+    transform: translateY(-5px);
+}
+

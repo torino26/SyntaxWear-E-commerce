@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyntaxWear</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="midia.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <img src="./imagem/logo.svg" alt="Logo">
+        </div>
+
+        <nav class="menu">
+            <a href="#">Masculino</a>
+            <a href="#">Feminino</a>
+            <a href="#">Outlet</a>
+        </nav>
+
+        <nav class="menu-direito">
+
+            <a href="#">Nossas lojas</a>
+            <a href="#">Sobre</a>
+
+            <button class="icon-btn" aria-label="Minha conta">
+                <img src="./imagem/ícone.png" alt="icone">
+            </button>
+
+            <button class="icon-btn" aria-label="Ajuda">
+                <img src="./imagem/ponto.png" alt="ponto">
+            </button>
+
+            <button class="icon-btn" aria-label="Sacola">
+                <img src="./imagem/saco.png" alt="saco">
+            </button>
+
+        </nav>
+
+
+        <!-- HAMBURGUER -->
+        <button class="hamburguer" id="hamburguer">
+            <img src="./imagem/menu.png" alt="Abrir menu">
+        </button>
+
+
+        <!-- MENU MOBILE -->
+        <nav class="menu-mobile" id="menu-mobile">
+
+            <a href="#">Masculino</a>
+            <a href="#">Feminino</a>
+            <a href="#">Outlet</a>
+            <a href="#">Nossas lojas</a>
+            <a href="#">Sobre</a>
+
+        </nav>
+
+    </header>
+
+    <script>
+    const hamburguer = document.getElementById("hamburguer");
+    const menuMobile = document.getElementById("menu-mobile");
+
+    hamburguer.addEventListener("click", function () {
+        menuMobile.classList.toggle("ativo");
+    });
+</script>
+
+
+</body>
+
+
+
+    <section class="banner">
+        <img src="./imagem/homemsentado.jpg" alt="Homem sentado">
+
+        <div class="banner-text">
+
+            <p>Krypton One</p>
+
+            <h1>
+                Transforme qualquer passo
+                em presença.
+            </h1>
+
+            <div class="banner-buttons">
+                <button>Ver modelos</button>
+                <button>Comprar</button>
+            </div>
+    </section>
+
+    <section class="categorias">
+        <div class="categorias">
+            <img src="./imagem/casual.jpg" alt="casual">
+            <button>casual</button>
+        </div>
+
+        <div class="categorias">
+            <img src="./imagem/esporte.jpg" alt="esperte">
+            <button>esporte</button>
+        </div>
+
+        <div class="categorias">
+            <img src="./imagem/moderno.jpg" alt="moderno">
+            <button>moderno</button>
+        </div>
+
+        <div class="categorias">
+            <img src="./imagem/futurista.jpg" alt="futurista">
+            <button>futurista</button>
+        </div>
+    </section>
+
+    <main class="produtos">
+        <div class="lado-cima">
+            <img src="./imagem/cara.jpg" alt="homem">
+
+
+            <div class="lado-text">
+                <p>Krypton One</p>
+                <h1>Estilo urbano com atitude</h1>
+
+                <div class="botao">
+                    <div class="button-btn">
+                        <button>Feminino</button>
+                    </div>
+
+                    <div class="button-mbt">
+                        <button>Masculino</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lado-baixo">
+            <img src="./imagem/tenis azul.jpg" alt="azul">
+        </div>
+
+        <div class="lado-direito">
+            <img src="./imagem/tenis roxo.png" alt="roxo">
+        </div>
+
+        <div class="modelo">
+            <img src="./imagem/modelo.png" alt="modelo">
+        </div>
+
+        <div class="lado-inferior">
+            <img src="./imagem/colorido.png" alt="colorido">
+        </div>
+
+        <div class="lado-exterior">
+            <img src="./imagem/cinza.png" alt="cinza">
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-esquerda">
+
+                <div class="newsletter">
+                    <p>Inscreva-se em nosso e-mail</p>
+
+                    <input type="email" placeholder="email@email.com">
+                </div>
+
+                <div class="redes-sociais">
+                    <p>Redes sociais</p>
+
+                    <div class="icones-redes">
+                        <img src="./imagem/insta.png" alt="insta">
+                        <img src="./imagem/zap.png" alt="zap">
+                        <img src="./imagem/tik.png" alt="tik">
+                        <img src="./imagem/face.png" alt="face">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer-menu">
+
+                <div class="footer-coluna">
+                    <h3>Masculino</h3>
+
+                    <a href="#">Casual</a>
+                    <a href="#">Esporte</a>
+                    <a href="#">Moderno</a>
+                    <a href="#">Futurista</a>
+                </div>
+
+
+                <div class="footer-coluna">
+                    <h3>Feminino</h3>
+
+                    <a href="#">Casual</a>
+                    <a href="#">Esporte</a>
+                    <a href="#">Moderno</a>
+                    <a href="#">Futurista</a>
+                </div>
+
+
+                <div class="footer-coluna">
+                    <h3>Outlet</h3>
+
+                    <a href="#">Masculino</a>
+                    <a href="#">Feminino</a>
+                </div>
+
+
+                <div class="footer-coluna">
+                    <h3>Nossas lojas</h3>
+
+                    <a href="#">Loja Física</a>
+                    <a href="#">Loja online</a>
+                </div>
+
+
+                <div class="footer-coluna">
+                    <h3>Sobre</h3>
+
+                    <a href="#">Quem somos</a>
+                    <a href="#">Missão</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright">
+            <p>Copyright. All Rights Reserved</p>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>

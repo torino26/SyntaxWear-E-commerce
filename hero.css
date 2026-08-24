@@ -1,0 +1,58 @@
+.categorias {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1550px;
+    margin: 0% auto;
+}
+
+.categorias div{
+    width: 320px;
+    height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    align-items: center;
+}
+
+
+.categorias div img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+ }
+
+.categorias button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 48px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 1px solid;
+    cursor: pointer;
+    background: transparent;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    border: 2px solid white;
+    color: white;
+}
+
+.categorias div:hover{
+    transform: scale(1.1);
+}
+
+.categorias button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #6528D3;
+    border-color: #6528D3;
+}

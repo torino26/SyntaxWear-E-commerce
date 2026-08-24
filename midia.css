@@ -1,0 +1,1313 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    background: #f5f5f5;
+
+    overflow-x: hidden;
+}
+
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: fixed;
+
+    top: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px);
+    max-width: 1240px;
+
+    height: 60px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    z-index: 100;
+}
+
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+
+    display: block;
+}
+
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.menu,
+.menu-direito {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.menu a,
+.menu-direito a {
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.menu a:hover,
+.menu-direito a:hover {
+    color: #6528d3;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================================
+   ÍCONES
+========================================================= */
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.icon-btn img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+}
+
+
+
+/* =========================================================
+   HAMBURGUER
+========================================================= */
+
+.hamburguer {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    padding: 0;
+
+    background: transparent;
+    
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.hamburguer img {
+    width: 25px;
+    height: 25px;
+    
+
+    object-fit: contain;
+}
+
+
+
+/* =========================================================
+   BANNER PRINCIPAL
+========================================================= */
+
+.banner {
+    position: relative;
+
+    width: calc(100% - 40px);
+    max-width: 1320px;
+
+    height: 500px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 15px;
+}
+
+
+
+/* =========================================================
+   TEXTO BANNER
+========================================================= */
+
+.banner-text {
+    position: absolute;
+
+    top: 50%;
+    right: 8%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+.banner-text p {
+    font-size: 16px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+}
+
+.banner-text h1 {
+    width: 350px;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* =========================================================
+   BOTÕES BANNER
+========================================================= */
+
+.banner-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.banner-buttons button {
+    width: 150px;
+    height: 45px;
+
+    padding: 0;
+
+    color: white;
+
+    background: transparent;
+
+    border: 1px solid white;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.banner-buttons button:last-child {
+    color: #652cff;
+
+    background: white;
+}
+
+.banner-buttons button:hover {
+    transform: translateY(-3px);
+
+    background: #6528d3;
+
+    border-color: #6528d3;
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* =========================================================
+   CATEGORIAS
+========================================================= */
+
+.categorias {
+    width: calc(100% - 40px);
+    max-width: 1320px;
+
+    margin: 0 auto;
+
+    padding: 35px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.categorias > div {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 0.65;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.categorias > div > img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.categorias button {
+    position: absolute;
+
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+
+    width: 120px;
+    height: 38px;
+
+    color: white;
+
+    background: transparent;
+
+    border: 2px solid white;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.categorias > div:hover {
+    transform: translateY(-5px);
+}
+
+.categorias button:hover {
+    background: #6528d3;
+
+    border-color: #6528d3;
+
+    transform: translate(-50%, calc(-50% - 3px));
+}
+
+
+
+/* =========================================================
+   PRODUTOS / MOSAICO
+========================================================= */
+
+.produtos {
+    width: calc(100% - 40px);
+    max-width: 1320px;
+
+    height: 720px;
+
+    margin: 15px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    gap: 15px;
+}
+
+
+
+/* =========================================================
+   BANNER DO HOMEM
+========================================================= */
+
+.lado-cima {
+    position: relative;
+
+    grid-column: 1 / 3;
+    grid-row: 1 / 7;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   TÊNIS PRETO E BRANCO
+========================================================= */
+
+.lado-baixo {
+    grid-column: 1 / 3;
+    grid-row: 7 / 11;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   TÊNIS ROXO GRANDE
+========================================================= */
+
+.lado-direito {
+    grid-column: 3 / 5;
+    grid-row: 1 / 5;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   MODELO
+========================================================= */
+
+.modelo {
+    grid-column: 3 / 4;
+    grid-row: 5 / 11;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   TÊNIS COLORIDO
+========================================================= */
+
+.lado-inferior {
+    grid-column: 4 / 5;
+    grid-row: 5 / 8;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   TÊNIS CINZA
+========================================================= */
+
+.lado-exterior {
+    grid-column: 4 / 5;
+    grid-row: 8 / 11;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   IMAGENS DO MOSAICO
+========================================================= */
+
+.lado-cima > img,
+.lado-baixo > img,
+.lado-direito > img,
+.modelo > img,
+.lado-inferior > img,
+.lado-exterior > img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.modelo > img {
+    object-position: center 20%;
+}
+
+
+
+/* =========================================================
+   HOVER MOSAICO
+========================================================= */
+
+.lado-cima:hover > img,
+.lado-baixo:hover > img,
+.lado-direito:hover > img,
+.modelo:hover > img,
+.lado-inferior:hover > img,
+.lado-exterior:hover > img {
+    transform: scale(1.02);
+}
+
+
+
+/* =========================================================
+   TEXTO SEGUNDO BANNER
+========================================================= */
+
+.lado-text {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+
+    color: white;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+.lado-text p {
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.lado-text h1 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* =========================================================
+   BOTÕES SEGUNDO BANNER
+========================================================= */
+
+.botao {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.button-btn button,
+.button-mbt button {
+    min-width: 120px;
+
+    padding: 8px 20px;
+
+    color: white;
+
+    background: transparent;
+
+    border: 2px solid white;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.button-btn button:hover,
+.button-mbt button:hover {
+    transform: translateY(-3px);
+
+    background: #6528d3;
+
+    border-color: #6528d3;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    width: calc(100% - 40px);
+    max-width: 1320px;
+
+    margin: 15px auto 0;
+
+    padding: 35px 70px 15px;
+
+    color: white;
+
+    background: #333;
+}
+
+.footer-conteudo {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+}
+
+.footer-esquerdo {
+    width: 300px;
+}
+
+.newsletter p,
+.redes-sociais p {
+    margin-bottom: 8px;
+}
+
+.newsletter input {
+    width: 100%;
+
+    padding: 11px 16px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    outline: none;
+}
+
+.redes-sociais {
+    margin-top: 30px;
+}
+
+.icones-redes {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+
+/* =========================================================
+   FOOTER MENU
+========================================================= */
+
+.footer-menu {
+    display: flex;
+
+    gap: 45px;
+}
+
+.footer-coluna {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-coluna h3 {
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 400;
+}
+
+.footer-coluna a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-copyright {
+    margin-top: 30px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #aaa;
+
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin: 0;
+
+    font-size: 12px;
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        width: calc(100% - 30px);
+    }
+
+    .menu {
+        gap: 18px;
+    }
+
+    .menu-direito {
+        gap: 15px;
+    }
+
+    .menu a,
+    .menu-direito a {
+        font-size: 14px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+        width: calc(100% - 30px);
+
+        height: 460px;
+    }
+
+
+    /* CATEGORIAS */
+
+    .categorias {
+        width: calc(100% - 30px);
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .categorias > div {
+        aspect-ratio: 1.4;
+    }
+
+
+    /* MOSAICO */
+
+    .produtos {
+        width: calc(100% - 30px);
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        width: calc(100% - 30px);
+
+        padding: 30px;
+    }
+
+    .footer-conteudo {
+        gap: 30px;
+    }
+
+    .footer-menu {
+        gap: 25px;
+    }
+}
+
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =====================================================
+       HEADER MOBILE
+    ===================================================== */
+
+    .header {
+        width: calc(100% - 20px);
+
+        height: 88px;
+
+        top: 10px;
+
+        padding: 0 38px;
+
+        border-radius: 22px;
+    }
+
+    /* ================= MENU MOBILE ================= */
+
+.menu-mobile {
+    position: absolute;
+
+    top: 100px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px;
+
+    display: none;
+    flex-direction: column;
+
+    gap: 5px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+    z-index: 999;
+}
+
+/* QUANDO O MENU ABRIR */
+
+.menu-mobile.ativo {
+    display: flex;
+}
+
+
+/* LINKS */
+
+.menu-mobile a {
+    width: 100%;
+
+    padding: 14px 12px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+
+
+/* EFEITO */
+
+.menu-mobile a:hover {
+     color: #6528d3;
+
+    background: #f3edff;
+}
+
+
+    /* ESCONDE MENU DESKTOP */
+
+    .menu,
+    .menu-direito {
+        display: none;
+    }
+
+
+    /* LOGO */
+
+    .logo img {
+        width: 185px;
+    }
+
+
+    /* HAMBURGUER */
+
+    .hamburguer {
+        display: flex;
+    }
+
+    .hamburguer img {
+        width: 26px;
+        height: 26px;
+        
+    }
+
+
+
+    /* =====================================================
+       BANNER MOBILE
+    ===================================================== */
+
+    .banner {
+        width: calc(100% - 20px);
+
+        height: 460px;
+
+        margin: 0 auto;
+
+        border-radius: 18px;
+    }
+
+    .banner img {
+        object-position: 35% center;
+
+        border-radius: 18px;
+    }
+
+
+    /* CENTRALIZA TEXTO */
+
+    .banner-text {
+        top: 51%;
+        left: 50%;
+        right: auto;
+
+        transform: translate(-50%, -50%);
+
+        width: 95%;
+
+        text-align: center;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .banner-text h1 {
+        width: 100%;
+
+        font-size: 21px;
+
+        line-height: 1.5;
+
+        margin-bottom: 18px;
+    }
+
+    .banner-buttons button {
+        width: 145px;
+
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+
+
+    /* =====================================================
+       CATEGORIAS MOBILE
+    ===================================================== */
+
+    .categorias {
+        width: calc(100% - 20px);
+
+        padding: 10px 0;
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .categorias > div {
+        width: 100%;
+
+        height: 300px;
+
+        aspect-ratio: auto;
+
+        border-radius: 15px;
+    }
+
+    .categorias > div > img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .categorias button {
+        width: 110px;
+
+        height: 36px;
+
+        font-size: 12px;
+    }
+
+
+
+    /* =====================================================
+       MOSAICO MOBILE
+    ===================================================== */
+
+    .produtos {
+        width: calc(100% - 20px);
+
+        height: auto;
+
+        margin: 8px auto;
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        grid-template-rows:
+            320px
+            230px
+            165px
+            165px
+            210px;
+
+        grid-template-areas:
+            "cima cima"
+            "baixo baixo"
+            "modelo inferior"
+            "modelo exterior"
+            "direito direito";
+
+        gap: 8px;
+    }
+
+
+    .lado-cima {
+        grid-area: cima;
+    }
+
+    .lado-baixo {
+        grid-area: baixo;
+    }
+
+    .modelo {
+        grid-area: modelo;
+    }
+
+    .lado-inferior {
+        grid-area: inferior;
+    }
+
+    .lado-exterior {
+        grid-area: exterior;
+    }
+
+    .lado-direito {
+        grid-area: direito;
+    }
+
+
+    .lado-cima,
+    .lado-baixo,
+    .modelo,
+    .lado-inferior,
+    .lado-exterior,
+    .lado-direito {
+        width: 100%;
+        height: 100%;
+
+        min-width: 0;
+        min-height: 0;
+
+        border-radius: 15px;
+
+        overflow: hidden;
+    }
+
+
+    .lado-cima > img,
+    .lado-baixo > img,
+    .modelo > img,
+    .lado-inferior > img,
+    .lado-exterior > img,
+    .lado-direito > img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    .lado-cima > img {
+        object-position: 35% center;
+    }
+
+    .modelo > img {
+        object-position: center top;
+    }
+
+
+
+    /* =====================================================
+       TEXTO SEGUNDO BANNER
+    ===================================================== */
+
+    .lado-text p {
+        font-size: 10px;
+    }
+
+    .lado-text h1 {
+        font-size: 15px;
+
+        margin-bottom: 10px;
+    }
+
+    .button-btn button,
+    .button-mbt button {
+        min-width: 90px;
+
+        padding: 6px 10px;
+
+        font-size: 10px;
+    }
+
+
+
+    /* =====================================================
+       FOOTER MOBILE
+    ===================================================== */
+
+    footer {
+        width: calc(100% - 20px);
+
+        margin: 8px auto 0;
+
+        padding: 30px 20px;
+    }
+
+    .footer-conteudo {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .footer-esquerdo {
+        width: 100%;
+    }
+
+    .newsletter input {
+        max-width: 100%;
+    }
+
+    .footer-menu {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px 20px;
+    }
+}
+
+
+
+/* =========================================================
+   CELULAR PEQUENO
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .header {
+        width: calc(100% - 16px);
+
+        height: 80px;
+
+        padding: 0 28px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .hamburguer img {
+        width: 23px;
+        height: 23px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+        width: calc(100% - 16px);
+
+        height: 430px;
+    }
+
+    .banner-text h1 {
+        font-size: 19px;
+    }
+
+    .banner-buttons button {
+        width: 135px;
+
+        height: 45px;
+
+        font-size: 14px;
+    }
+
+
+    /* CATEGORIAS */
+
+    .categorias {
+        width: calc(100% - 16px);
+    }
+
+    .categorias > div {
+        height: 290px;
+    }
+
+
+    /* MOSAICO */
+
+    .produtos {
+        width: calc(100% - 16px);
+
+        grid-template-rows:
+            300px
+            220px
+            155px
+            155px
+            200px;
+
+        gap: 7px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        width: calc(100% - 16px);
+
+        padding: 25px 15px;
+    }
+
+    .footer-coluna h3 {
+        font-size: 12px;
+    }
+
+    .footer-coluna a {
+        font-size: 11px;
+    }
+}
+
+.menu-mobile {
+    display: none;
+}
+

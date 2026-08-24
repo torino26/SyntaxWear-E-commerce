@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #f5f5f5;
+}
+
+.header{
+    width: 100%;
+    height: 60PX;
+    padding: 0px 20px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97%;
+    z-index: 10;
+    background: white;
+    border-radius: 15px;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+
+.logo span{
+    color: #6528D3;
+}
+
+.menu, .menu-direito{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a, .menu-direito a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-btn:hover img{
+    color: rgb(226, 10, 255);
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.icon-btn img {
+    width: 24px;
+    height: 24px;
+}
+.menu a:hover, .menu-direito a:hover{
+    color: #6528D3;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+  
+}
+
+.banner img {
+    max-width: 1440px;
+    max-height: 1440px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.logo:hover img{
+    transform: scale(1.1);
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    right: 25%;
+     transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+
+/* Krypton One */
+.banner-text p {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+
+/* Texto principal */
+.banner-text h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    width: 388px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+
+/* Área dos botões */
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.banner-buttons button {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.banner-buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #6528D3;
+    border-color: #6528D3;
+}
+
+
+/* Botões */
+.banner-buttons button {
+    width: 161px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s; 
+}
+
+
+/* Botão Comprar */
+.banner-buttons button:last-child {
+    background-color: white;
+    color: #6c2cff;
+
+    border: 1px solid white;
+}
